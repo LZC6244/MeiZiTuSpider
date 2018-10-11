@@ -9,6 +9,7 @@ class MeizituSpiderSpider(scrapy.Spider):
     allowed_domains = ['meizitu.com']
     start_urls = ['http://meizitu.com/']
     count = 1
+    # 使用正则提取url数字页码
     pattern = re.compile(r'\d+')
 
     def parse(self, response):
@@ -24,7 +25,7 @@ class MeizituSpiderSpider(scrapy.Spider):
         max_page = int(self.pattern.search(max_page).group(0))
 
         # 如果count小于最大页数，则继续往下爬取
-        # 若不需要爬取完全部页数，可更改max_page
+        # 若不需要爬取完全部页数，可更改此处max_page
         if self.count < max_page:
             self.count += 1
             print 'go to next page seccess.'
