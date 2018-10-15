@@ -5,12 +5,14 @@ import re
 
 
 class MeizituSpiderSpider(scrapy.Spider):
-        name = 'meizitu_spider'
+    name = 'meizitu_spider'
+
     allowed_domains = ['meizitu.com']
     start_urls = ['http://meizitu.com/']
     count = 1
     # 使用正则提取url数字页码
     pattern = re.compile(r'\d+')
+
 
     def parse(self, response):
         print '开始爬取： 第 %s 页' % self.count
