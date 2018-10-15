@@ -2,6 +2,7 @@
 
 ## 目录
 - MeiZiTu_1 
+- MeiZiTu_2
 
 ---
 
@@ -31,3 +32,10 @@
     - small
         ![](https://raw.githubusercontent.com/LZC6244/ScrapyProjects/master/MeiZiTu_1/MeiZiTu/images_demo/4.png)
     
+### MeiZiTu_2 
+- 目标网站：meizitu.com
+- 运行：运行项目里面的cmdline.py。
+- 说明：
+    - 基于MeiZiTu_1修改，重写了ImagesPipeline。爬取妹子图”前五页前五分类图片，图片名称为时期+序号。
+- 效果图  
+    ![](https://raw.githubusercontent.com/LZC6244/ScrapyProjects/master/MeiZiTu_2/MeiZiTu_2/images_demo/1.png)
